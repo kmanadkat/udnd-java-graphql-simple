@@ -1,10 +1,8 @@
 package com.krupeshanadkat.bootstrap.entity;
 
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import javax.persistence.*;
+
 
 @Entity
 public class Dog {
@@ -21,6 +19,8 @@ public class Dog {
         this.breed = breed;
         this.origin = origin;
     }
+
+    public Dog() {}
 
     public Long getId() {
         return id;

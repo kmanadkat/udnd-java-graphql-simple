@@ -4,9 +4,11 @@ import com.coxautodev.graphql.tools.GraphQLMutationResolver;
 import com.krupeshanadkat.bootstrap.entity.Dog;
 import com.krupeshanadkat.bootstrap.exception.DogNotFoundException;
 import com.krupeshanadkat.bootstrap.repository.DogRepository;
+import org.springframework.stereotype.Component;
 
 import java.util.Optional;
 
+@Component
 public class Mutation implements GraphQLMutationResolver {
     private final DogRepository dogRepository;
 
