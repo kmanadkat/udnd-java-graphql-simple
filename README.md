@@ -43,4 +43,4 @@ type Mutation {
 }
 ```
 
-
+![Query Example](./graphiql-screenshot.png)
